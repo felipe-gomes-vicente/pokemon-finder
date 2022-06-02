@@ -1,0 +1,7 @@
+@import "./colors";
+@import "./reset";
+
+body {
+  background: $light-gray;
+  font-family: $ff-inter;
+}

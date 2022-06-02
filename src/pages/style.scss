@@ -1,0 +1,40 @@
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 105px;
+  padding-left: 245px;
+  .home-content {
+    h1 {
+      max-width: 454px;
+      padding-bottom: 18px;
+      font-size: 54px;
+      font-weight: bold;
+    }
+
+    p {
+      max-width: 428px;
+    }
+
+    button {
+      margin-top: 43px;
+      width: 231px;
+      height: 66px;
+      border: 0;
+      color: var(--light-white);
+      font-size: 20px;
+      background: var(--light-green);
+      box-shadow: 0px 2px 0px #0000002e;
+      border-radius: 11px;
+
+      &:hover {
+        font-weight: bold;
+        opacity: .8;
+      }
+    }
+  }
+
+  .home-image img {
+    width: 100%;
+  }
+
+}

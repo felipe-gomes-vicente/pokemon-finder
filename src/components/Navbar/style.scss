@@ -12,6 +12,12 @@
 
     .link-route {
       text-decoration: none;
+      color: var(--auttar-gray);
+
+      &:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
     }
 
   }

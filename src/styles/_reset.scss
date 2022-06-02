@@ -5,11 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  //Font family Primary
+  --ff-inter:'Inter', sans-serif;
+
+  //Font family secondary
+  --ff-open: Open Sans,sans-serif;
 }
-
-//Font family Primary
-$ff-inter:'Inter', sans-serif;
-
-//Font family secondary
-$ff-open: Open Sans,sans-serif;
-

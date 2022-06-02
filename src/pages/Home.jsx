@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import homeImage from "../assets/images/pikachu-image.png";
 
+import "./style.scss";
+
 export const Home = () => {
   return (
     <>

@@ -2,6 +2,7 @@
 @import "./reset";
 
 body {
-  background: $light-gray;
-  font-family: $ff-inter;
+  background: var(--light-gray);
+  font-family: var(--ff-inter);
+  color: var(--auttar-gray);
 }

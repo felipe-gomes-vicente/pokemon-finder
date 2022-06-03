@@ -1,0 +1,39 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+
+  .contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    width: 25rem;
+    background-color: var(--shadow-color);
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    color: var(--light-white);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-image {
+      width: 10rem;
+    }
+    
+    .contact-links {
+      a {
+        padding: 8px;
+      }
+      
+    }
+  }
+}

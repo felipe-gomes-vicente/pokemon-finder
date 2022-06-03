@@ -1,0 +1,129 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 10rem;
+
+  @media only screen and (max-width: 768px) {
+    padding: 2rem 2rem;
+  }
+
+  .search-info {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    border-top: 1px solid var(--filter-gray-color);
+    border-bottom: 1px solid var(--filter-gray-color);
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  .search-input {
+    width: 100%;
+    font-size: 2.5rem;
+    background-color: var(--filter-gray-color);
+    border: none;
+    border-radius: 10px;
+    padding: 0.2rem 1rem;
+
+    &::placeholder {
+      color: transparentize(#020202, 0.5);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+  .type-button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+    .filter-button {
+      height: 2.5rem;
+      width: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 1rem;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      font-weight: bold;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+
+  }
+
+  .type-select-container {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+    }
+
+    select {
+      width: 100%;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+
+      .select-option {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .active-filters-container {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid var(--filter-gray-color);
+    padding: 0.5rem 0 0.5rem 0;
+
+    .active-filters-info {
+      font-size: 1.5rem;
+    }
+
+    .active-search-filter {
+      padding: 0.250rem 0.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      background-color: var(--filter-gray-color);
+      cursor: pointer;
+
+      i {
+        font-size: 0.6rem;
+        padding-right: 0.5rem;
+      }
+    }
+
+    .active-type-filter {
+      padding: 0.250rem 0.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+
+      i {
+        font-size: 0.6rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+}
